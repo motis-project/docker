@@ -1,1 +1,1 @@
-cmake -GNinja -DCMAKE_TOOLCHAIN_FILE=/toolchain/sscache-gcc-7.cmake "$@"
+cmake -GNinja -DCMAKE_TOOLCHAIN_FILE=/toolchain/ccache-gcc-7.cmake "$@"
