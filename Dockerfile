@@ -53,10 +53,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
           --with-serialization \
           -s NO_BZIP2=1
 
-RUN mkdir -p /root/.ssh \
-    && chmod 0700 /root/.ssh \
-    && ssh-keyscan git.motis-project.de > /root/.ssh/known_hosts
-
 COPY toolchain /toolchain/
 COPY bin/ /usr/bin/
 
