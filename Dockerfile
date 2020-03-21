@@ -25,7 +25,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
         valgrind \
         ccache \
     && rm -rf /var/cache/apk/* \
-    && cp -r /opt/boost_1_71_0 /opt/boost_1_71_0-libc++
+    && cp -r /opt/boost_1_71_0 /opt/boost_1_71_0-libc++ \
     && cd /opt/boost_1_71_0 \
     && ./bootstrap.sh \
     && ./b2 -j6 link=static threading=multi variant=release \
