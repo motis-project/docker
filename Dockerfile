@@ -53,6 +53,8 @@ RUN export DEBIAN_FRONTEND=noninteractive \
           --with-serialization \
           -s NO_BZIP2=1
 
+RUN mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
+
 COPY toolchain /toolchain/
 COPY bin/ /usr/bin/
 
