@@ -17,7 +17,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
         ssh-client git \
-        git \
         ninja-build \
         g++ g++-9 \
         clang-9 clang-format-9 clang-tidy-9 \
