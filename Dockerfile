@@ -56,5 +56,6 @@ RUN mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 COPY toolchain /toolchain/
 COPY bin/ /usr/bin/
+COPY blob/pkg /usr/bin
 
 WORKDIR /root
