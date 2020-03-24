@@ -12,6 +12,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y --no-install-recommends apt-utils software-properties-common wget gnupg \
     && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && add-apt-repository -y ppa:ubuntu-toolchain-r/test \
+    && add-apt-repository -y ppa:git-core/ppa \
     && echo "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main" > /etc/apt/sources.list.d/llvm.list \
     && apt-get update \
     && apt-get upgrade -y \
