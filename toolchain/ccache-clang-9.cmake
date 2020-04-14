@@ -8,4 +8,4 @@ set(CMAKE_CXX_FLAGS "-fcolor-diagnostics  -stdlib=libc++" CACHE STRING "" FORCE)
 set(CMAKE_CXX_LINKER_FLAGS "-static -stdlib=libc++ -lc++abi -pthread" CACHE STRING "" FORCE)
 set(CMAKE_CXX_EXE_LINKER_FLAGS "-static -stdlib=libc++ -lc++abi -pthread" CACHE STRING "" FORCE)
 
-set(BOOST_ROOT /opt/boost_1_71_0-libc++)
+set(BOOST_ROOT /opt/boost_1_72_0-libc++)
